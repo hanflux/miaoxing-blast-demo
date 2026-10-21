@@ -1,0 +1,9 @@
+{
+  "project": "NC-MG-003",
+  "version": "candidate.3-agent.1",
+  "base": "0.2.0-candidate.3",
+  "reviewControlInterface": true,
+  "productionControlInterface": false,
+  "gate2Accepted": false,
+  "sourceCommit": "62e959d1c5fad3c65af661b7429cf1a1a1ce42e6"
+}
