@@ -1,0 +1,9 @@
+{
+  "project": "NC-MG-003",
+  "version": "0.1.1",
+  "stage": "M1 prototype",
+  "engine": "Cocos Creator 3.8.8",
+  "sourceMaps": false,
+  "debug": false,
+  "realDeviceTouchVerified": false
+}
