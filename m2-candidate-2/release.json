@@ -1,0 +1,11 @@
+{
+  "project": "NC-MG-003",
+  "version": "0.2.0-candidate.2",
+  "stage": "M2 experience candidate, not an accepted final release",
+  "engine": "Cocos Creator 3.8.8",
+  "sourceMaps": false,
+  "debug": false,
+  "realDeviceTouchVerified": false,
+  "listeningReviewComplete": false,
+  "visualStyleFrozen": false
+}
