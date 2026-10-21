@@ -1,0 +1,10 @@
+{
+  "project": "NC-MG-003",
+  "version": "0.2.0-candidate.3",
+  "creator": "3.8.8",
+  "sourceCommit": "34004e883321fe3ac72457d2f302ed6213a17dc8",
+  "gate2Accepted": false,
+  "workCloudPlayable": "unverified",
+  "listeningAcceptance": false,
+  "fallback": "../m2-candidate-2/"
+}

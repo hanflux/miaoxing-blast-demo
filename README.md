@@ -12,3 +12,5 @@ M1 v0.1.1，占位猫咪美术。25步得分练习：点选两个相邻猫咪或
 Latest test build: https://hanflux.github.io/miaoxing-blast-demo/m2-candidate-2/
 
 Version 0.2.0-candidate.2 is an experience candidate, not a final accepted release. The original M1 runtime at this site root remains unchanged.
+
+M2 rework candidate.3: https://hanflux.github.io/miaoxing-blast-demo/m2-candidate-3/ (requires WebGL; atmosphere acceptance pending).
