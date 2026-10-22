@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>喵星大爆炸 | R5 0.2.0-r5c.candidate.5</title>
+
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+  <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true"/>
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="360-fullscreen" content="true"/>
+
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
+  <meta name="x5-page-mode" content="app">
+
+  <!--<link rel="apple-touch-icon" href=".png" />-->
+  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cpath%20fill%3D%22%23EAA04E%22%20d%3D%22M8%2027V5l18%2013h12L56%205v22c12%2036-60%2036-48%200Z%22%2F%3E%3Ccircle%20cx%3D%2223%22%20cy%3D%2232%22%20r%3D%223%22%20fill%3D%22%23644753%22%2F%3E%3Ccircle%20cx%3D%2241%22%20cy%3D%2232%22%20r%3D%223%22%20fill%3D%22%23644753%22%2F%3E%3C%2Fsvg%3E">
+</head>
+<body>
+<!-- NC-R5-BOOT-BEGIN -->
+<section id="boot-panel" role="status" aria-live="polite">
+  <div><p class="boot-kicker">喵星大爆炸 · 体验候选</p><h1 id="boot-title">小伙伴正在醒来</h1><p id="boot-detail">正在检查绘图能力并准备棋盘…</p><pre id="boot-diagnostic"></pre><button id="boot-retry" type="button">重新加载</button><p class="boot-note">诊断只显示在本页，不发送遥测。</p></div>
+</section>
+<style>
+#boot-panel{position:fixed;inset:0;z-index:100;background:#fff5e5;color:#644753;display:grid;place-items:center;font:17px/1.7 system-ui,sans-serif;padding:24px;box-sizing:border-box}#boot-panel[hidden]{display:none}#boot-panel>div{max-width:480px;background:#fffcf5;border:2px solid #ead9c8;border-radius:28px;padding:28px}#boot-panel h1{font-size:26px;line-height:1.35}#boot-panel pre{font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere;background:#f1e3e9;padding:12px;border-radius:12px}#boot-panel button{font:inherit;color:#644753;background:#f3d29c;border:0;border-radius:18px;padding:10px 22px;cursor:pointer}.boot-kicker,.boot-note{font-size:13px;color:#997d8c}
+</style>
+<!-- NC-R5-BOOT-END -->
+<div id="GameDiv" cc_exact_fit_screen="true">
+      <div id="Cocos3dGameContainer">
+        <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
+      </div>
+    </div>
+  
+
+<!-- Polyfills bundle. -->
+
+<script src="src/polyfills.bundle.js" charset="utf-8"> </script>
+
+
+<!-- SystemJS support. -->
+<script src="src/system.bundle.js" charset="utf-8"> </script>
+
+<!-- Import map -->
+<script src="src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
+
+<script>
+    /* Startup is guarded below. */
+</script>
+<script src="boot-guard.js"></script>
+</body>
+</html>
