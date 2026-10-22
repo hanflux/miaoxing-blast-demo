@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>喵星大爆炸 | R5 0.2.0-loading.candidate.1</title>
+
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+  <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true"/>
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="360-fullscreen" content="true"/>
+
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
+  <meta name="x5-page-mode" content="app">
+
+  <!--<link rel="apple-touch-icon" href=".png" />-->
+  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cpath%20fill%3D%22%23EAA04E%22%20d%3D%22M8%2027V5l18%2013h12L56%205v22c12%2036-60%2036-48%200Z%22%2F%3E%3Ccircle%20cx%3D%2223%22%20cy%3D%2232%22%20r%3D%223%22%20fill%3D%22%23644753%22%2F%3E%3Ccircle%20cx%3D%2241%22%20cy%3D%2232%22%20r%3D%223%22%20fill%3D%22%23644753%22%2F%3E%3C%2Fsvg%3E">
+</head>
+<body>
+<!-- NC-R5-BOOT-BEGIN -->
+<section id="boot-panel" role="status" aria-live="polite">
+ <div class="boot-card">
+  <p class="boot-kicker">喵星大爆炸 · 糖果乐园</p>
+  <div class="boot-mascot" aria-hidden="true"><svg viewBox="0 0 160 132"><ellipse cx="80" cy="121" rx="44" ry="6" fill="#d8bbce"/><path d="M32 53Q25 13 45 20L64 35Q82 29 99 35L119 20Q136 14 129 55C153 126 10 130 32 53" fill="#f2c285" stroke="#79526c" stroke-width="4" stroke-linejoin="round"/><path d="M39 43L41 29L55 38M107 38L121 28L123 44" fill="#f1aeb2"/><ellipse cx="80" cy="86" rx="29" ry="22" fill="#fff5dd"/><path d="M50 69Q58 60 65 69M96 69Q104 60 111 69" fill="none" stroke="#79526c" stroke-width="4" stroke-linecap="round"/><path d="M75 79L85 79L80 84Z" fill="#b97e92"/><path d="M80 84Q78 93 70 89M80 84Q82 93 90 89" fill="none" stroke="#79526c" stroke-width="2.5" stroke-linecap="round"/><ellipse cx="46" cy="82" rx="9" ry="5" fill="#edaaa9"/><ellipse cx="114" cy="82" rx="9" ry="5" fill="#edaaa9"/><path d="M76 38L80 48L84 38" fill="none" stroke="#c58b5d" stroke-width="4" stroke-linecap="round"/></svg><span class="boot-star">✦</span></div>
+  <h1 id="boot-title">喵星小伙伴正在集合…</h1>
+  <p class="boot-first">首次进入需要下载游戏资源，可能稍等片刻；<br>以后再来通常会更快喵～</p>
+  <p id="boot-detail">正在连接喵星乐园</p>
+  <div class="boot-paws" aria-hidden="true"><i>●</i><i>●</i><i>●</i></div>
+  <p id="boot-tip" class="boot-note">清理浏览器缓存后，也可能需要重新下载。</p>
+  <details><summary>查看加载详情</summary><pre id="boot-diagnostic"></pre><button id="boot-copy" type="button">复制加载详情</button><p id="boot-copy-note" class="boot-note">详情仅保留在本页，不发送遥测。</p></details>
+  <button id="boot-retry" type="button" hidden>重新尝试</button>
+ </div>
+</section>
+<style>
+#boot-panel{--paper:#fff6e7;--card:#fffcf6;--ink:#644753;--muted:#977486;--line:#e9cbd9;--accent:#edc38c;position:fixed;inset:0;z-index:100;display:grid;place-items:center;overflow:auto;padding:max(18px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) max(18px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));box-sizing:border-box;background:radial-gradient(ellipse at 12% 13%,#f5d8e4 0,transparent 42%),radial-gradient(ellipse at 93% 85%,#d9e6db 0,transparent 43%),var(--paper);color:var(--ink);font:15px/1.65 system-ui,sans-serif;color-scheme:light}#boot-panel[hidden]{display:none}#boot-panel .boot-card{box-sizing:border-box;width:min(100%,390px);margin:auto;background:var(--card);border:2px solid var(--line);border-radius:30px;padding:24px 20px;text-align:center;box-shadow:0 8px 0 #c59cab22}#boot-panel .boot-kicker{font-size:12px;letter-spacing:1px;color:var(--muted);margin:0 0 5px}#boot-panel .boot-mascot{position:relative;width:136px;margin:4px auto 12px;animation:boot-breathe 3.2s ease-in-out infinite}#boot-panel svg{display:block;width:100%;height:auto}#boot-panel .boot-star{position:absolute;right:0;top:10px;font-size:24px;color:#c6a16c}#boot-panel h1{font-size:22px;line-height:1.5;margin:10px 0}#boot-panel .boot-first{font-size:14px;margin:12px 0 20px}#boot-panel #boot-detail{min-height:28px;margin:0;font-weight:650;font-size:15px}#boot-panel .boot-paws{display:flex;gap:10px;justify-content:center;margin:8px 0 14px;color:#bd8bad}#boot-panel .boot-paws i{font-size:10px;font-style:normal;animation:boot-dot 1.5s ease-in-out infinite}#boot-panel .boot-paws i:nth-child(2){animation-delay:.2s}#boot-panel .boot-paws i:nth-child(3){animation-delay:.4s}#boot-panel .boot-note{color:var(--muted);font-size:11px;margin:8px 0}#boot-panel details{border-top:1px solid var(--line);margin-top:18px;padding-top:10px;text-align:left}#boot-panel summary{font-size:12px;cursor:pointer;min-height:32px;line-height:32px}#boot-panel pre{font-size:11px;line-height:1.5;max-height:190px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--paper);padding:10px;border-radius:12px;user-select:text}#boot-panel button{font:inherit;min-height:44px;border:0;border-radius:15px;background:var(--accent);color:var(--ink);padding:9px 18px;cursor:pointer}#boot-panel #boot-copy{font-size:12px}#boot-panel #boot-retry{width:100%;margin-top:14px}#boot-panel[data-failed=true] .boot-mascot,#boot-panel[data-failed=true] .boot-paws i{animation:none}@keyframes boot-breathe{50%{transform:translateY(-3px)}}@keyframes boot-dot{50%{opacity:.3}}@media(max-width:350px){#boot-panel .boot-card{padding:18px 14px}#boot-panel h1{font-size:20px}#boot-panel .boot-first{font-size:13px}}@media(prefers-reduced-motion:reduce){#boot-panel .boot-mascot,#boot-panel .boot-paws i{animation:none!important}}@media(prefers-color-scheme:dark){#boot-panel{--paper:#302b38;--card:#3d3442;--ink:#f9e9f0;--muted:#d5b9ca;--line:#72576d;--accent:#7b586e;background:radial-gradient(ellipse at 12% 13%,#5d4358 0,transparent 42%),radial-gradient(ellipse at 93% 85%,#3b5149 0,transparent 43%),var(--paper);color-scheme:dark}}
+</style>
+<!-- NC-R5-BOOT-END -->
+<div id="GameDiv" cc_exact_fit_screen="true">
+      <div id="Cocos3dGameContainer">
+        <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
+      </div>
+    </div>
+  
+
+<!-- Polyfills bundle. -->
+
+<script src="src/polyfills.bundle.js" charset="utf-8"> </script>
+
+
+<!-- SystemJS support. -->
+<script src="src/system.bundle.js" charset="utf-8"> </script>
+
+<!-- Import map -->
+<script src="src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
+
+<script>
+    /* Startup is guarded below. */
+</script>
+<script src="boot-guard.js"></script>
+</body>
+</html>
