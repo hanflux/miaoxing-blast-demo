@@ -1,0 +1,19 @@
+{
+  "task": "NC-MG-ADS-001",
+  "publicDirectory": "ads001-web-review-91a33f5-20261106",
+  "candidateSource": "91a33f5f30afd3b2460acfce9ab2b9a154f072fa",
+  "reviewHead": "d794068ad30aff944a6ec9eca4cba153eb65b999",
+  "originalWebFiles": 71,
+  "originalWebFilesUnchanged": true,
+  "profile": "A-L05-R1",
+  "namespace": "nc-mg-003-ads001-qa/ads001-g2-hl001r2-20261105-41f89c7ad906/",
+  "status": "PUBLIC_WEB_REVIEW_CANDIDATE_NOT_RELEASE",
+  "mockAdsOnly": true,
+  "realAdSDK": false,
+  "wechatValidated": false,
+  "HL001": "OPEN",
+  "modelRequested": "GPT-6.1 Sol / High",
+  "actualModel": "UNKNOWN",
+  "actualReasoning": "UNKNOWN",
+  "generatedUTC": "2026-11-06T05:17:03.166136+00:00"
+}
