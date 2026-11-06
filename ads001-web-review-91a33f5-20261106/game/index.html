@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="review-storage-guard.js"></script>
   <meta charset="utf-8">
 
   <title>Cocos Creator | nc-mg-003</title>
@@ -45,20 +46,12 @@
     </div>
   
 
-<!-- Polyfills bundle. -->
-
-<script src="src/polyfills.bundle.js" charset="utf-8"> </script>
-
-
-<!-- SystemJS support. -->
-<script src="src/system.bundle.js" charset="utf-8"> </script>
-
-<!-- Import map -->
-<script src="src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
-
 <script>
-    System.import('./index.js').catch(function(err) { console.error(err); })
+if (globalThis.__ADS001_WEB_REVIEW_GUARD__?.engineProbeMapped) {
+  document.write("<!-- Polyfills bundle. -->\n\n<script src=\"src/polyfills.bundle.js\" charset=\"utf-8\"> <\/script>\n\n\n<!-- SystemJS support. -->\n<script src=\"src/system.bundle.js\" charset=\"utf-8\"> <\/script>\n\n<!-- Import map -->\n<script src=\"src/import-map.json\" type=\"systemjs-importmap\" charset=\"utf-8\"> <\/script>\n\n<script>\n    System.import('./index.js').catch(function(err) { console.error(err); })\n<\/script>\n\n");
+} else {
+  document.getElementById('GameDiv').replaceChildren(Object.assign(document.createElement('p'), {textContent:'评审页暂时无法安全保存。请退出此页，稍后重试。'}));
+}
 </script>
-
 </body>
 </html>
